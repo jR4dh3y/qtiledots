@@ -1,0 +1,270 @@
+#################################################################
+# KEYBOARD BINDINGS FOR ANY TWM
+#################################################################
+#Rofi
+super + F12
+    rofi -show drun
+
+#################################################################
+# SUPER + ... KEYS
+#################################################################
+
+#Atom
+super + e
+    code
+#Browser
+super + w
+    google-chrome-stable
+
+#Htop
+#super + h
+#    urxvt 'htop task manager' -e htop
+
+#archlinux-logout
+super + x
+    archlinux-logout
+
+#Rofi theme selector
+super + r
+    rofi-theme-selector
+
+#Pavucontrol
+super + v
+    pavucontrol
+
+#alacritty
+super + Return
+    alacritty
+
+#Xkill
+super + Escape
+    xkill
+
+#Keyboard dependent
+#alacritty
+super + KP_Enter
+	alacritty
+
+#################################################################
+# SUPER + SHIFT KEYS
+#################################################################
+
+#File-Manager
+super + shift + Return
+	thunar
+
+#reload sxhkd:
+super + shift + s
+	pkill -USR1 -x sxhkd
+
+#Keyboard dependent
+#super + shift + KP_Enter
+#	thunar
+
+
+#################################################################
+# CONTROL + ALT KEYS
+#################################################################
+
+#archlinux-tweak-tool
+ctrl + alt + e
+    archlinux-tweak-tool
+
+#Pulse Audio Control
+ctrl + alt + u
+     pavucontrol
+
+#Rofi theme selector
+ctrl + alt + r
+  rofi-theme-selector
+
+#Spotify
+ctrl + alt + s
+   spotify
+
+#Xfce4-appfinder
+ctrl + alt + a
+    xfce4-appfinder
+
+
+#Keyboard dependent
+#alacritty
+#ctrl + alt + KP_Enter
+#     alacritty
+
+#Xcfe4-TaskManager
+ctrl + shift + Escape
+    xfce4-taskmanager
+
+
+#################################################################
+#     SCREENSHOTS
+#################################################################
+
+#Scrot
+Print
+    scrot 'ArcoLinux-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
+
+#screeenshooter
+ctrl + Print
+     xfce4-screenshooter
+
+#Gnome-Screenshot
+ctrl + shift + Print
+     gnome-screenshot -i
+
+#Raises volume
+XF86AudioRaiseVolume
+    amixer set Master 10%+
+
+#Lowers volume
+XF86AudioLowerVolume
+    amixer set Master 10%-
+
+#Mute
+XF86AudioMute
+    amixer -D pulse set Master 1+ toggle
+
+#Playerctl works for Pragha, Spotify and others
+#Delete the line for playerctl if you want to use mpc
+#and replace it with the corresponding code
+#mpc works for e.g.ncmpcpp
+#mpc toggle
+#mpc next
+#mpc prev
+#mpc stop
+
+#PLAY
+XF86AudioPlay
+    playerctl play-pause
+
+#Next
+XF86AudioNext
+    playerctl next
+
+#previous
+XF86AudioPrev
+    playerctl previous
+
+#Stop
+XF86AudioStop
+    playerctl stop
+
+#Brightness up
+XF86MonBrightnessUp
+    xbacklight -inc 10
+
+#Brightness down
+XF86MonBrightnessDown
+    xbacklight -dec 10
+#################################################################
+#################################################################
+##################   DESKTOP SPECIFIC    ########################
+#################################################################
+#################################################################
+
+#################################################################
+# CTRL + ALT KEYS
+#################################################################
+
+#Picom Toggle
+ctrl + alt + o
+    ~/.config/qtile/scripts/picom-toggle.sh
+
+#################################################################
+# SUPER + KEYS
+#################################################################
+
+#Toggle fullscreen of window
+#super + f
+#    qtile-cmd -o window -f toggle_fullscreen
+
+# normalize layout (undo size changes)
+#super + n
+#    qtile-cmd -o layout -f normalize
+
+#kill
+#super + q
+#    qtile-cmd -o window -f kill
+
+# Foucs WINDOW (Navigate)
+#super + {Left,Down,Up,Right}
+#    qtile-cmd -o layout -f {left,down,up,right}
+
+# Foucs WINDOW (Navigate)
+#super + {h,j,k,l}
+#    qtile-cmd -o layout -f {left,down,up,right}
+
+#################################################################
+# SUPER KEYS
+#################################################################
+
+#Focus selected desktop
+#super + Tab
+#    qtile-cmd -o screen -f next_group
+
+# set the window state
+#super + space
+#    qtile-cmd -o cmd -f next_layout
+
+
+#################################################################
+# SUPER + SHIFT KEYS
+#################################################################
+
+#kill
+#super + shift + q
+#    qtile-cmd -o window -f kill
+
+#Quit Qtile
+#super + shift + x
+#    qtile-cmd -o cmd -f shutdown
+
+# FLIP LAYOUT FOR MONADTALL/MONADWIDE
+#super + shift + f
+#    qtile-cmd -o layout -f flip
+
+# MOVE WINDOWS UP OR DOWN BSP LAYOUT
+
+#super + shift + {h,j,k,l}
+#    qtile-cmd -o layout -f {shuffle_left,shuffle_down,shuffle_up,shuffle_right}
+
+# MOVE WINDOWS UP OR DOWN MONADTALL/MONADWIDE LAYOUT
+
+#super + shift + {Up,Down,Left,Right}
+#    qtile-cmd -o layout -f {shuffle_up,shuffle_down,swap_left,swap_right}
+
+# TOGGLE FLOATING LAYOUT
+#super + shift + space
+#    qtile-cmd -o window -f toggle_floating
+
+#Reload Qtile
+#super + shift + r
+#    qtile-cmd -o cmd -f restart
+
+
+#################################################################
+# SUPER + ALT KEYS
+#################################################################
+
+# FLIP LAYOUT FOR BSP
+
+#super + alt + {h,j,k,l}
+#    qtile-cmd -o layout -f {flip_left,flip_down,flip_up,flip_right}
+
+
+##################################
+## The RESIZE KEYS ARE RESERVED ##
+##  ~/.config/qtile/config.py   ##
+##      Lines 191 - 235         ##
+##################################
+## RESIZE UP, DOWN, LEFT, RIGHT ##
+#super + control + l
+#super + control + Right
+#super + control + h
+#super + control + Left
+#super + control + k
+#super + control + Up
+#super + control + j
+#super + control + Down
+##################################
