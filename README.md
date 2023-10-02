@@ -15,7 +15,7 @@ pip install qtile
 To use these configuration files, simply copy the contents of this repository to your `~/.config/qtile/` directory. Then, restart Qtile by pressing `mod + control + r`.
 
 ```bash
-git clone https://github.com/jR4dh3y/qtiledots.git
+git clone https://github.com/jR4dh3y/qtiledots.git ~/.config/qtile
 ```
 
 ## Configuration Files
@@ -33,4 +33,4 @@ The following configuration files are included in this repository:
 That's it! You should now have a working installation of Qtile with these configuration files. If you have any questions or issues, please feel free to open an issue on this repository.
 
 ## Screenshots
-![alt text](https://github.com/jR4dh3y/qtiledots/blob/main/ss.png?raw=true)
+![Screenshot](ss.png)
