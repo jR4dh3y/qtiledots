@@ -34,3 +34,4 @@ That's it! You should now have a working installation of Qtile with these config
 
 ## Screenshots
 ![Screenshot](ss.png)
+![Screenshot](ss2.png)
