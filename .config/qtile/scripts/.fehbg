@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-scale "$HOME/.config/qtile/wallpaper.jpg"
+feh --no-fehbg --bg-fill '.config/qtile/wal.jpg'

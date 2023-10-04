@@ -31,10 +31,14 @@ fi
 run sxhkd -c ~/.config/qtile/sxhkd/sxhkdrc &
 
 
+
+#set background
+bash $HOME/.config/qtile/scripts/.fehbg
+
 #starting utility applications at boot time
-run variety &
-run nm-applet &
-run pamac-tray &
+#run variety &
+#run nm-applet &
+#run pamac-tray &
 run xfce4-power-manager &
 numlockx on &
 blueberry-tray &
@@ -43,7 +47,7 @@ picom --config $HOME/.config/qtile/scripts/picom.conf &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 
 #starting user applications at boot time
-run volumeicon &
+#run volumeicon &
 #run discord &
 #nitrogen --restore &
 #run caffeine -a &
