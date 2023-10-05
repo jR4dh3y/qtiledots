@@ -434,7 +434,7 @@ def assign_app_group(client):
     d = {}
 
     # assign deez apps
-    d[group_names[0][0]] = ['Alacritty', 'xfce4-terminal']
+    d[group_names[0][0]] = ['Alacritty', 'xfce4-terminal','kitty', 'urxvt', 'termite', 'terminator', 'konsole', 'xterm', 'gnome-terminal', 'st', 'sakura', 'tilix', 'lxterminal', 'mate-terminal', 'guake', 'eterm', 'terminology', 'stterm', 'lilyterm', 'terminix', 'cool-retro-term', 'terminator',]
     d[group_names[1][0]] = ['Navigator', 'brave-browser', 'midori','google-chrome-stable', 'qutebrowser', 'firefox', 'chromium', 'chromium-browser']
     d[group_names[2][0]] = ['pcmanfm', 'thunar','dolphin', 'ark', 'nemo', 'nautilus', 'spacefm', 'gentoo', 'system-config-printer.py', 'file-rol']
     d[group_names[3][0]] = ['code', 'geany', 'subl', 'mousepad', 'atom', 'kate', 'gedit', 'leafpad', 'pluma', 'gvim', 'emacs', 'vim', 'nano',]
