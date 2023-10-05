@@ -48,5 +48,5 @@ The following configuration files are included in this repository:
 That's it! You should now have a working installation of Qtile with these configuration files. If you have any questions or issues, please feel free to open an issue on this repository.
 
 ## Screenshots
-![Screenshot](ss.png)
-![Screenshot](ss2.png)
+![Screenshot](ss's/ss.png)
+![Screenshot](ss's/ss2.png)
