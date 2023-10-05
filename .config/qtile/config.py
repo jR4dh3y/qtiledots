@@ -1,32 +1,5 @@
-# Copyright (c) 2010 Aldo Cortesi
-# Copyright (c) 2010, 2014 dequis
-# Copyright (c) 2012 Randall Ma
-# Copyright (c) 2012-2014 Tycho Andersen
-# Copyright (c) 2012 Craig Barnes
-# Copyright (c) 2013 horsik
-# Copyright (c) 2013 Tao Sauvage
-# Permission is hereby granted, free of charge, to any person obtaining a copy
-# of this software and associated documentation files (the "Software"), to deal
-# in the Software without restriction, including without limitation the rights
-# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-# copies of the Software, and to permit persons to whom the Software is
-# furnished to do so, subject to the following conditions:
-#
-# The above copyright notice and this permission notice shall be included in
-# all copies or substantial portions of the Software.
-#
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-# SOFTWARE.
-
 from typing import List  # noqa: F401
-
 from scripts import storage
-
 import os
 import subprocess
 from libqtile import qtile
@@ -44,7 +17,7 @@ terminal = f"alacritty --config-file {home_dir}/.config/qtile/alacritty/alacritt
 ##### KEYBINDINGS ##### 
 keys = [
 
-# Most of our keybindings are in sxhkd file - except these
+# Most of my keybindings are in sxhkd file - except these
 
 # SUPER + FUNCTION KEYS
 
@@ -440,7 +413,7 @@ def init_widgets_list():
 
 # screens/bar
 def init_screens():
-    return [Screen(top=bar.Bar(widgets=init_widgets_list(), size=35, opacity=0.9, margin=[5,10,0,10]))]
+    return [Screen(top=bar.Bar(widgets=init_widgets_list(), size=35, opacity=1, margin=[5,10,0,10]))]
 
 screens = init_screens()
 
@@ -462,12 +435,12 @@ def assign_app_group(client):
 
     # assign deez apps
     d[group_names[0][0]] = ['Alacritty', 'xfce4-terminal']
-    d[group_names[1][0]] = ['Navigator', 'discord', 'brave-browser', 'midori', 'qutebrowser']
-    d[group_names[2][0]] = ['pcmanfm', 'thunar']
-    d[group_names[3][0]] = ['code', 'geany']
+    d[group_names[1][0]] = ['Navigator', 'brave-browser', 'midori','google-chrome-stable', 'qutebrowser', 'firefox', 'chromium', 'chromium-browser']
+    d[group_names[2][0]] = ['pcmanfm', 'thunar','dolphin', 'ark', 'nemo', 'nautilus', 'spacefm', 'gentoo', 'system-config-printer.py', 'file-rol']
+    d[group_names[3][0]] = ['code', 'geany', 'subl', 'mousepad', 'atom', 'kate', 'gedit', 'leafpad', 'pluma', 'gvim', 'emacs', 'vim', 'nano',]
     d[group_names[4][0]] = ['vlc', 'obs', 'mpv', 'mplayer', 'lxmusic', 'gimp']
-    d[group_names[5][0]] = ['spotify']
-    d[group_names[6][0]] = ['lxappearance', 'gpartedbin', 'lxtask', 'lxrandr', 'arandr', 'pavucontrol', 'xfce4-settings-manager']
+    d[group_names[5][0]] = ['spotify', 'discord',]
+    d[group_names[6][0]] = ['lxappearance', 'gpartedbin', 'lxtask', 'lxrandr', 'arandr', 'pavucontrol', 'xfce4-settings-manager', 'xfce4-power-manager-settings', 'xfce4-display-settings', 'xfce4-mime-settings', 'xfce4-accessibility-settings', 'xfce4-keyboard-settings', 'xfce4-mouse-settings', 'xfce4-session-settings', 'xfce4-settings-editor', 'xfce4-display-settings', 'xfce4-power-manager-settings', 'xfce4-mime-settings', 'xfce4-accessibility-settings', 'xfce4-keyboard-settings', 'xfce4-mouse-settings', 'xfce4-session-settings', 'xfce4-settings-editor', 'xfce4-display-settings', 'xfce4-power-manager-settings', 'xfce4-mime-settings', 'xfce4-accessibility-settings', 'xfce4-keyboard-settings', 'xfce4-mouse-settings', 'xfce4-session-settings', 'xfce4-settings-editor', 'xfce4-display-settings', 'xfce4-power-manager-settings', 'xfce4-mime-settings', 'xfce4-accessibility-settings', 'xfce4-keyboard-settings', 'xfce4-mouse-settings', 'xfce4-session-settings', 'xfce4-settings-editor']
 
     wm_class = client.window.get_wm_class()[0]
     for i in range(len(d)):
