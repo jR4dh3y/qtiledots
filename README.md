@@ -43,8 +43,7 @@ The following configuration files are included in this repository:
 - `zsh.rc`: This file contains my zsh configs.
 - `picom.conf` : This contains settings for my compositor 
 
-## Conclusion
-
+---
 That's it! You should now have a working installation of Qtile with these configuration files. If you have any questions or issues, please feel free to open an issue on this repository.
 
 ## Screenshots
