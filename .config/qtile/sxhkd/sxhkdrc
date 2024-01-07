@@ -1,6 +1,3 @@
-#################################################################
-# KEYBOARD BINDINGS FOR ANY TWM
-#################################################################
 #Rofi
 super + F12
     rofi -show drun
@@ -9,20 +6,16 @@ super + F12
 # SUPER + ... KEYS
 #################################################################
 
-#Atom
+#code
 super + e
     code
 #Browser
 super + w
     google-chrome-stable
 
-#Htop
-#super + h
-#    urxvt 'htop task manager' -e htop
-
 #archlinux-logout
 super + x
-    archlinux-logout
+    
 
 #Rofi theme selector
 super + r
@@ -32,18 +25,18 @@ super + r
 super + v
     pavucontrol
 
-#alacritty
+#kitty
 super + Return
-    alacritty
+    kitty
 
 #Xkill
 super + Escape
     xkill
 
 #Keyboard dependent
-#alacritty
+#terminal
 super + KP_Enter
-	alacritty
+	kitty
 
 #################################################################
 # SUPER + SHIFT KEYS
@@ -57,7 +50,7 @@ super + shift + Return
 super + shift + s
 	pkill -USR1 -x sxhkd
 
-#Keyboard dependent
+Keyboard dependent
 #super + shift + KP_Enter
 #	thunar
 
@@ -65,10 +58,6 @@ super + shift + s
 #################################################################
 # CONTROL + ALT KEYS
 #################################################################
-
-#archlinux-tweak-tool
-ctrl + alt + e
-    archlinux-tweak-tool
 
 #Pulse Audio Control
 ctrl + alt + u
@@ -78,32 +67,11 @@ ctrl + alt + u
 ctrl + alt + r
   rofi-theme-selector
 
-#Spotify
-ctrl + alt + s
-   spotify
-
-#Xfce4-appfinder
-ctrl + alt + a
-    xfce4-appfinder
-
-
-#Keyboard dependent
-#alacritty
-#ctrl + alt + KP_Enter
-#     alacritty
-
-#Xcfe4-TaskManager
-ctrl + shift + Escape
-    xfce4-taskmanager
-
 
 #################################################################
 #     SCREENSHOTS
 #################################################################
 
-#Scrot
-Print
-    scrot 'ArcoLinux-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
 
 #screeenshooter
 ctrl + Print
