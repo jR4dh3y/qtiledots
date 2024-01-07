@@ -16,7 +16,17 @@ This repository contains the configuration files for the [Qtile](http://www.qtil
 To use these configuration files, you need to have Qtile and some dependences installed on your system. You can install it by running the following command:
 
 ```bash
-yay -Syu base-devel qtile python-psutil pywal-git feh picom-jonaburg-fix dunst zsh playerctl brightnessctl alacritty pfetch thunar rofi ranger cava pulseaudio alsa-utils neovim vim git ly google-chrome xrander network-manager-applet pavucontrol --noconfirm --needed
+yay -Syu base-devel qtile python-psutil pywal-git feh picom-arian8j2-git dunst zsh playerctl brightnessctl kitty pfetch thunar rofi ranger cava pulseaudio alsa-utils neovim vim git ly google-chrome xrander network-manager-applet pavucontrol --noconfirm --needed
+```
+
+### nerd fonts instalation
+```bash
+git clone https://github.com/ronniedroid/getnf.git && cd getnf
+./install.sh
+```
+then run 
+``` bash
+getnf
 ```
 
 
@@ -32,17 +42,6 @@ cd qtiledots
 ```bash
 cp -R ./. ~/
 ```
-
-## Configuration Files
-
-The following configuration files are included in this repository:
-
-- `config.py`: This file contains the main configuration for Qtile.
-- `sxhkd.rc`: This file contains the key bindings for Qtile.
-- `alacritty.yml`: This file contains the config for alacritty terminal.
-- `zsh.rc`: This file contains my zsh configs.
-- `picom.conf` : This contains settings for my compositor 
-
 ---
 That's it! You should now have a working installation of Qtile with these configuration files. If you have any questions or issues, please feel free to open an issue on this repository.
 
