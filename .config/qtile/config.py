@@ -23,8 +23,14 @@ keys = [
 
     Key([mod], "f", lazy.window.toggle_fullscreen()),
     Key([mod], "q", lazy.window.kill()),
-    Key([mod], "d", lazy.spawn("rofi -show drun")),  # Application launcher
-    Key([mod], "r", lazy.spawn("rofi -show run")),   # Command runner
+    Key([mod], "d", lazy.spawn(f"{home_dir}/.config/rofi/launchers/type-1/launcher.sh")),  # Application launcher
+    Key([mod], "r", lazy.spawn(f"rofi -show run -theme {home_dir}/.config/rofi/launchers/type-1/style-1.rasi")),   # Command runner
+    Key([mod], "p", lazy.spawn(f"{home_dir}/.config/rofi/applets/bin/powermenu.sh")),     # Power menu
+    Key([mod], "b", lazy.spawn(f"{home_dir}/.config/rofi/applets/bin/brightness.sh")),    # Brightness control
+    Key([mod], "v", lazy.spawn(f"{home_dir}/.config/rofi/applets/bin/volume.sh")),        # Volume control
+    Key([mod], "m", lazy.spawn(f"{home_dir}/.config/rofi/applets/bin/mpd.sh")),           # Music player control
+    Key([mod], "s", lazy.spawn(f"{home_dir}/.config/rofi/applets/bin/screenshot.sh")),    # Screenshot menu
+    Key([mod], "l", lazy.spawn(f"{home_dir}/.config/rofi/applets/bin/quicklinks.sh")),    # Quick links menu
 
 
 # SUPER + SHIFT KEYS
