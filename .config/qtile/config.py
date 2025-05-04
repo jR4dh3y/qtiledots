@@ -23,6 +23,8 @@ keys = [
 
     Key([mod], "f", lazy.window.toggle_fullscreen()),
     Key([mod], "q", lazy.window.kill()),
+    Key([mod], "d", lazy.spawn("rofi -show drun")),  # Application launcher
+    Key([mod], "r", lazy.spawn("rofi -show run")),   # Command runner
 
 
 # SUPER + SHIFT KEYS
